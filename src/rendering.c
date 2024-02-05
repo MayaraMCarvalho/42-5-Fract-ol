@@ -6,7 +6,7 @@
 /*   By: macarval <macarval@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 22:16:20 by macarval          #+#    #+#             */
-/*   Updated: 2022/10/26 15:12:24 by macarval         ###   ########.fr       */
+/*   Updated: 2023/12/29 15:14:40 by macarval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,6 @@ void	render_fractal(t_data *data)
 
 int	render(t_data *data)
 {
-	int	i;
-
-	i = 0;
 	if (data->win_ptr == NULL)
 		return (1);
 	render_fractal(data);

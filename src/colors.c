@@ -6,7 +6,7 @@
 /*   By: macarval <macarval@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 23:58:50 by macarval          #+#    #+#             */
-/*   Updated: 2022/10/27 01:06:19 by macarval         ###   ########.fr       */
+/*   Updated: 2023/12/28 22:08:48 by macarval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ int	get_color(t_data	*data)
 {
 	int	rgb_i[3];
 	int	rgb_f[3];
-	int	color;
+	// int	color;
 
-	color = data->color1 * data->n_iter / MAX_ITER;
+	// color = data->color1 * data->n_iter / MAX_ITER;
 	rgb_i[0] = (data->color1 >> 16) & 0xFF;
 	rgb_i[1] = (data->color1 >> 8) & 0xFF;
 	rgb_i[2] = data->color1 & 0xFF;
@@ -34,25 +34,25 @@ int	get_color(t_data	*data)
 void	change_color(t_data	*data)
 {
 	if (data->click_color == 1)
-	{		
+	{
 		data->color1 = 0x36FF14;
 		data->color2 = 0x32;
 		data->click_color++;
 	}
 	else if (data->click_color == 2)
-	{		
+	{
 		data->color1 = 0xA;
 		data->color2 = BG_PIXEL;
 		data->click_color++;
 	}
 	else if (data->click_color == 3)
-	{		
+	{
 		data->color1 = BLACK_PIXEL;
 		data->color2 = 0x5a07b8;
 		data->click_color++;
 	}
 	else if (data->click_color == 4)
-	{		
+	{
 		data->color1 = BLACK_PIXEL;
 		data->color2 = 0xA;
 		data->click_color = 1;

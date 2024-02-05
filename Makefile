@@ -6,7 +6,7 @@
 #    By: macarval <macarval@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/21 00:40:38 by macarval          #+#    #+#              #
-#    Updated: 2022/10/27 00:39:18 by macarval         ###   ########.fr        #
+#    Updated: 2023/12/29 12:30:59 by macarval         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ bonus:		$(EXE_BONUS)
 
 $(NAME):	$(EXE)
 			$(GCC) $(CFLAGS) $(EXE) $(LFLAGS) -I. -o $(NAME)
-			
+
 clean:
 			rm -f $(EXE) $(EXE_BONUS)
 
